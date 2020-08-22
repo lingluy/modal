@@ -1,0 +1,129 @@
+<html>
+    <head>
+      <style>
+          .ball_wrap {
+    position: relative;
+    margin: 150px;
+    width: 190px;
+}
+
+.blue_ball_1 {
+    background: #2F9BC1;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+}
+
+.green_ball_2 {
+    background: rgb(17, 199, 0);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    position: absolute;
+}
+
+.red_ball_3 {
+    background: rgb(199, 0, 10);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    position: absolute;
+}
+
+
+.orange_ball_4 {
+    background: rgb(199, 119, 0);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    position: absolute;
+}
+
+.black_ball_5 {
+    background: rgb(14, 10, 4);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    position: absolute;
+}
+
+.ball_wrap div:nth-of-type(2) {
+    top: 20px;
+    left: -100px;
+}
+
+.ball_wrap div:nth-of-type(2):after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #000;
+    position: absolute;
+    width: 50px;
+    right: -50px;
+    top: 50%;
+}
+
+.ball_wrap div:nth-of-type(3) {
+    top: 20px;
+    right: -100px;
+}
+
+.ball_wrap div:nth-of-type(3):after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #000;
+    position: absolute;
+    width: 50px;
+    left: -52px;
+    top: 50%;
+}
+
+.ball_wrap div:nth-of-type(4) {
+    right: 105px;
+    bottom: -160px;
+}
+
+.ball_wrap div:nth-of-type(4):after {
+    content: "";
+    display: block;
+    border-left: 1px solid #000;
+    position: absolute;
+    height: 130px;
+    left: 70px;
+    top: -120px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.ball_wrap div:nth-of-type(5) {
+    right: 10px;
+    bottom: -160px;
+}
+
+.ball_wrap div:nth-of-type(5):after {
+    content: "";
+    display: block;
+    border-left: 1px solid #000;
+    position: absolute;
+    height: 130px;
+    left: 30px;
+    top: -110px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+</style>
+    </head>
+<body>
+<div class="ball_wrap">
+    <div class="blue_ball_1"></div>
+    <div class="green_ball_2"></div>
+    <div class="red_ball_3"></div>
+    <div class="orange_ball_4"></div>
+    <div class="black_ball_5"></div>
+</div>
+</body>
+</html>
